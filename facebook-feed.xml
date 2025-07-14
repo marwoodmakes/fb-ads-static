@@ -10,7 +10,7 @@
       <g:description>&lt;p&gt;Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/yarn-dyed-linen-blend-striped-regular-fit-shirt-medium-blue/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180131_420_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/180131_420_fb.jpg</g:image_link>
       <g:price>77.00 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -28,7 +28,7 @@
       <g:description>&lt;p&gt;Knitted Regular Fit T-Shirt (Medium Brown)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/knitted-regular-fit-t-shirt-medium-brown/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180458_210_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113775_fb.jpg</g:image_link>
       <g:price>90 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -48,7 +48,7 @@
       <g:description>&lt;p&gt;Loose Fit Applique T-Shirt (Navy)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/loose-fit-applique-t-shirt-navy/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180350_401_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113768_fb.jpg</g:image_link>
       <g:price>70 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -69,7 +69,7 @@
       <g:description>&lt;p&gt;Front And Back Artwork Hoodie (Navy)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/front-and-back-artwork-hoodie-navy/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/179899_401_MDL_CRP_FNT-copy.webp</g:image_link>
+      <g:image_link>/product-images/179899_401_fb.jpg</g:image_link>
       <g:price>91.00 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -87,7 +87,7 @@
       <g:description>&lt;p&gt;3Pk Mens 1/2 Terry Crew (Black)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/3pk-mens-1-2-terry-crew-black/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/07/LKJHG.png</g:image_link>
+      <g:image_link>/product-images/LKJHG_fb.jpg</g:image_link>
       <g:price>35 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -103,7 +103,7 @@
       <g:description>&lt;p&gt;Regular Fit 3 Crosses Cotton-Linen T-Shirt (Medium Blue)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/regular-fit-3-crosses-cotton-linen-t-shirt-medium-blue/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180045_420_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113757_fb.jpg</g:image_link>
       <g:price>45 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -124,7 +124,7 @@
       <g:description>&lt;p&gt;Core Seasonal - Regular-Fit Short-Sleeved Linen Shirt (Dark Brown)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/core-seasonal-regular-fit-short-sleeved-linen-shirt-dark-brown/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/181264_201_R_10_FNT_C-copy.webp</g:image_link>
+      <g:image_link>/product-images/181264_201_fb.jpg</g:image_link>
       <g:price>100 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -145,7 +145,7 @@
       <g:description>&lt;p&gt;Embroidered Chest Artwork Relaxed Fit Sweatshirt (White/Pastel)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/embroidered-chest-artwork-relaxed-fit-sweatshirt-white-pastel/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180190_101_MDL_CRP_FNT-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113744_fb.jpg</g:image_link>
       <g:price>120 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -160,32 +160,12 @@
       <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/25174132-DTL6-copy.webp</g:additional_image_link>
     </item>
     <item>
-      <g:id>180074_001</g:id>
-      <g:title>Regular Fit Front And Back Artwork Sweatshirt (Black)</g:title>
-      <g:description>&lt;p&gt;Regular Fit Front And Back Artwork Sweatshirt (Black)&lt;/p&gt;
-</g:description>
-      <g:link>https://scotch-soda.co.uk/product/regular-fit-front-and-back-artwork-sweatshirt-black/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_001_MDL_CRP-copy.webp</g:image_link>
-      <g:price>77.00 EUR</g:price>
-      <g:availability>in stock</g:availability>
-      <g:condition>new</g:condition>
-      <g:brand>Scotch &amp; Soda</g:brand>
-      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
-      <g:gender>Unisex</g:gender>
-      <g:age_group>Adult</g:age_group>
-      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_001_MDL_FNT-copy.webp</g:additional_image_link>
-      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_001_MDL_BCK-copy.webp</g:additional_image_link>
-      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_0157_FNT-copy.webp</g:additional_image_link>
-      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_0157_BCK-copy.webp</g:additional_image_link>
-      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_0157_DTL6-copy.webp</g:additional_image_link>
-    </item>
-    <item>
       <g:id>180043_001</g:id>
       <g:title>Relaxed-Fit 3 Crosses Garment-Dyed T-Shirt (Black)</g:title>
       <g:description>&lt;p&gt;Relaxed-Fit 3 Crosses Garment-Dyed T-Shirt (Black)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/relaxed-fit-3-crosses-garment-dyed-t-shirt-black/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180043_001_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/180043_001_fb.jpg</g:image_link>
       <g:price>35.00 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -201,12 +181,32 @@
       <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180043_001_DTL6-copy.webp</g:additional_image_link>
     </item>
     <item>
+      <g:id>180074_001</g:id>
+      <g:title>Regular Fit Front And Back Artwork Sweatshirt (Black)</g:title>
+      <g:description>&lt;p&gt;Regular Fit Front And Back Artwork Sweatshirt (Black)&lt;/p&gt;
+</g:description>
+      <g:link>https://scotch-soda.co.uk/product/regular-fit-front-and-back-artwork-sweatshirt-black/</g:link>
+      <g:image_link>/product-images/180074_001_fb.jpg</g:image_link>
+      <g:price>77.00 EUR</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>Unisex</g:gender>
+      <g:age_group>Adult</g:age_group>
+      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_001_MDL_FNT-copy.webp</g:additional_image_link>
+      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_001_MDL_BCK-copy.webp</g:additional_image_link>
+      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_0157_FNT-copy.webp</g:additional_image_link>
+      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_0157_BCK-copy.webp</g:additional_image_link>
+      <g:additional_image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180074_0157_DTL6-copy.webp</g:additional_image_link>
+    </item>
+    <item>
       <g:id>product_113726</g:id>
       <g:title>Front And Back Artwork Sweatshirt (Dark Beige)</g:title>
       <g:description>&lt;p&gt;Front And Back Artwork Sweatshirt (Dark Beige)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/front-and-back-artwork-sweatshirt-dark-beige/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180478_250_MDL_CRP_FNT-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113726_fb.jpg</g:image_link>
       <g:price>84.00 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -227,7 +227,7 @@
       <g:description>&lt;p&gt;Fave - Relaxed Fit Striped Poplin Bermuda Short (Medium Brown)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/fave-relaxed-fit-striped-poplin-bermuda-short-medium-brown/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180011_210_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/180011_210_fb.jpg</g:image_link>
       <g:price>77.00 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -248,7 +248,7 @@
       <g:description>&lt;p&gt;Regular Fit Left Chest Logo T-Shirt (Lt Pastel Brown)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/regular-fit-left-chest-logo-t-shirt-lt-pastel-brown/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/180047_230_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113720_fb.jpg</g:image_link>
       <g:price>30 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -269,7 +269,7 @@
       <g:description>&lt;p&gt;Regular Fit Front And Back Artwork T-Shirt (White/Pastel)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/regular-fit-front-and-back-artwork-t-shirt-white-pastel/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/181885_101_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113710_fb.jpg</g:image_link>
       <g:price>50 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
@@ -290,7 +290,7 @@
       <g:description>&lt;p&gt;Seasonal Core - Warren Cotton-Linen Twill Jogger (Medium Blue)&lt;/p&gt;
 </g:description>
       <g:link>https://scotch-soda.co.uk/product/seasonal-core-warren-cotton-linen-twill-jogger-medium-blue/</g:link>
-      <g:image_link>https://scotch-soda.co.uk/wp-content/uploads/2025/06/179979_420_MDL_CRP-copy.webp</g:image_link>
+      <g:image_link>/product-images/product_113699_fb.jpg</g:image_link>
       <g:price>110 EUR</g:price>
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
