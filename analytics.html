@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard - Scotch & Soda</title>
+    <meta name="description" content="Analytics and insights for Scotch & Soda product catalog">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, rgba(0, 191, 165, 0.08) 0%, rgba(0, 191, 165, 0.03) 100%);
+            color: #1E1E2F;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #1E1E2F;
+        }
+
+        .back-btn {
+            background: #00BFA5;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background: #00A693;
+            transform: translateY(-2px);
+        }
+
+        /* Dashboard Grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .metric-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .metric-title {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .metric-icon {
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1E1E2F;
+            margin-bottom: 10px;
+        }
+
+        .metric-change {
+            font-size: 0.85rem;
+            color: #00BFA5;
+        }
+
+        .metric-change.negative {
+            color: #ff4444;
+        }
+
+        /* Large Cards */
+        .large-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #1E1E2F;
+        }
+
+        /* Charts Container */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Price Distribution */
+        .price-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .price-range {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .price-label {
+            min-width: 80px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .price-bar-container {
+            flex: 1;
+            height: 30px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .price-bar {
+            height: 100%;
+            background: linear-gradient(135deg, #00BFA5, #00A693);
+            border-radius: 15px;
+            transition: width 0.8s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Stock Status Chart */
+        .stock-chart {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .stock-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .stock-indicator {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .stock-indicator.in-stock {
+            background: #00BFA5;
+        }
+
+        .stock-indicator.low-stock {
+            background: #FFB347;
+        }
+
+        .stock-indicator.out-stock {
+            background: #ff4444;
+        }
+
+        .stock-indicator.unmanaged {
+            background: #999;
+        }
+
+        .stock-info {
+            flex: 1;
+        }
+
+        .stock-label {
+            font-weight: 600;
+            color: #1E1E2F;
+            margin-bottom: 3px;
+        }
+
+        .stock-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .product-thumb {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .rating-stars {
+            color: #FFB347;
+        }
+
+        .view-product-btn {
+            background: #00BFA5;
+            color: white;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .view-product-btn:hover {
+            background: #00A693;
+        }
+
+        /* Category Pills */
+        .category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .category-pill {
+            background: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .category-pill:hover {
+            background: #00BFA5;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .category-count {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            margin: 20px auto;
+            border: 3px solid #f0f0f0;
+            border-top: 3px solid #00BFA5;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-left {
+                flex-direction: column;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stock-chart {
+                grid-template-columns: 1fr;
+            }
+
+            .data-table {
+                font-size: 0.85rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="https://agoraai.co.uk/" target="_blank">
+                    <img src="https://cdn.shopify.com/s/files/1/0910/8389/9266/files/ChatGPT_Image_Jun_12_2025_01_05_41_PM.png?v=1749729963" 
+                         alt="Scotch & Soda" 
+                         class="logo">
+                </a>
+                <h1>Analytics Dashboard</h1>
+            </div>
+            <a href="/" class="back-btn">← Back to Catalog</a>
+        </header>
+
+        <!-- Main Metrics -->
+        <div class="dashboard-grid" id="mainMetrics">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-title">Total Products</div>
+                    <div class="metric-icon">📦</div>
+                </div>
+                <div class="metric-value" id="totalProducts">0</div>
+                <div class="metric-change">All catalog items</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-title">In Stock Rate</div>
+                    <div class="metric-icon">✅</div>
+                </div>
+                <div class="metric-value" id="inStockRate">0%</div>
+                <div class="metric-change" id="inStockCount">0 products available</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-title">Average Price</div>
+                    <div class="metric-icon">💷</div>
+                </div>
+                <div class="metric-value" id="avgPrice">£0</div>
+                <div class="metric-change">Across all products</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-title">On Sale</div>
+                    <div class="metric-icon">🏷️</div>
+                </div>
+                <div class="metric-value" id="onSaleCount">0</div>
+                <div class="metric-change" id="avgDiscount">Avg discount: 0%</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-title">Low Stock Alert</div>
+                    <div class="metric-icon">⚠️</div>
+                </div>
+                <div class="metric-value" id="lowStockCount">0</div>
+                <div class="metric-change negative">Need restocking</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-title">Total Inventory</div>
+                    <div class="metric-icon">📊</div>
+                </div>
+                <div class="metric-value" id="totalInventory">0</div>
+                <div class="metric-change">Units in stock</div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-grid">
+            <!-- Price Distribution -->
+            <div class="chart-container">
+                <h3 class="card-title">Price Distribution</h3>
+                <div class="price-bars" id="priceDistribution">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading analytics...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stock Levels -->
+            <div class="chart-container">
+                <h3 class="card-title">Stock Status Overview</h3>
+                <div class="stock-chart" id="stockChart">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading analytics...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Overview -->
+        <div class="large-card">
+            <h3 class="card-title">Categories Overview</h3>
+            <div class="category-pills" id="categoryPills">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading categories...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Products Tables -->
+        <div class="large-card">
+            <h3 class="card-title">Top Rated Products</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Rating</th>
+                        <th>Reviews</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="topRatedProducts">
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 40px;">
+                            <div class="spinner" style="margin: 0 auto;"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="large-card">
+            <h3 class="card-title">Best Sellers</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Sales</th>
+                        <th>Revenue</th>
+                        <th>Stock</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="bestSellers">
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 40px;">
+                            <div class="spinner" style="margin: 0 auto;"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="large-card">
+            <h3 class="card-title">Biggest Discounts</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Discount</th>
+                        <th>Was</th>
+                        <th>Now</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="biggestDiscounts">
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 40px;">
+                            <div class="spinner" style="margin: 0 auto;"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Low Stock Alert -->
+        <div class="large-card" id="lowStockSection" style="display: none;">
+            <h3 class="card-title" style="color: #ff4444;">⚠️ Low Stock Alert</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Current Stock</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="lowStockProducts">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Load analytics data on page load
+        window.addEventListener('DOMContentLoaded', loadAnalytics);
+
+        async function loadAnalytics() {
+            try {
+                // Fetch analytics data from the API
+                const response = await fetch('/api/analytics');
+                
+                if (!response.ok) {
+                    // Fallback to loading products-stats.json directly
+                    const statsResponse = await fetch('/products-stats.json');
+                    const productsResponse = await fetch('/products-data.json');
+                    
+                    if (statsResponse.ok && productsResponse.ok) {
+                        const stats = await statsResponse.json();
+                        const products = await productsResponse.json();
+                        
+                        // Build analytics object from raw data
+                        const analytics = buildAnalyticsFromData(stats, products);
+                        displayAnalytics(analytics);
+                    } else {
+                        throw new Error('Failed to load analytics data');
+                    }
+                } else {
+                    const analytics = await response.json();
+                    displayAnalytics(analytics);
+                }
+                
+                // Also load low stock products
+                loadLowStockProducts();
+                
+            } catch (error) {
+                console.error('Failed to load analytics:', error);
+                document.querySelectorAll('.loading').forEach(el => {
+                    el.innerHTML = '<p style="color: #ff4444;">Failed to load analytics data</p>';
+                });
+            }
+        }
+
+        function buildAnalyticsFromData(stats, products) {
+            // Build analytics structure from raw data
+            return {
+                overview: stats,
+                price_ranges: {
+                    '0-25': products.filter(p => parseFloat(p.price) <= 25).length,
+                    '26-50': products.filter(p => parseFloat(p.price) > 25 && parseFloat(p.price) <= 50).length,
+                    '51-75': products.filter(p => parseFloat(p.price) > 50 && parseFloat(p.price) <= 75).length,
+                    '76-100': products.filter(p => parseFloat(p.price) > 75 && parseFloat(p.price) <= 100).length,
+                    '100+': products.filter(p => parseFloat(p.price) > 100).length
+                },
+                stock_levels: {
+                    'out_of_stock': products.filter(p => p.stock_quantity === 0).length,
+                    'low_stock': products.filter(p => p.stock_quantity > 0 && p.stock_quantity <= 5).length,
+                    'medium_stock': products.filter(p => p.stock_quantity > 5 && p.stock_quantity <= 20).length,
+                    'high_stock': products.filter(p => p.stock_quantity > 20).length,
+                    'unmanaged': products.filter(p => !p.manage_stock).length
+                },
+                categories: products.reduce((acc, p) => {
+                    const category = p.categories || 'Uncategorized';
+                    acc[category] = (acc[category] || 0) + 1;
+                    return acc;
+                }, {}),
+                top_products: {
+                    by_rating: products
+                        .filter(p => p.average_rating > 0)
+                        .sort((a, b) => b.average_rating - a.average_rating)
+                        .slice(0, 5)
+                        .map(p => ({ id: p.id, title: p.title, rating: p.average_rating, reviews: p.review_count })),
+                    by_sales: products
+                        .filter(p => p.total_sales > 0)
+                        .sort((a, b) => b.total_sales - a.total_sales)
+                        .slice(0, 5)
+                        .map(p => ({ id: p.id, title: p.title, sales: p.total_sales, revenue: p.total_sales * parseFloat(p.price) })),
+                    on_sale: products
+                        .filter(p => p.on_sale)
+                        .sort((a, b) => b.sale_percentage - a.sale_percentage)
+                        .slice(0, 5)
+                        .map(p => ({ id: p.id, title: p.title, discount: `${p.sale_percentage}%`, price: p.price, was: p.regular_price }))
+                }
+            };
+        }
+
+        async function loadLowStockProducts() {
+            try {
+                const response = await fetch('/api/low-stock?threshold=5');
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.count > 0) {
+                        displayLowStockProducts(data.products);
+                    }
+                } else {
+                    // Fallback: load from products-data.json
+                    const productsResponse = await fetch('/products-data.json');
+                    if (productsResponse.ok) {
+                        const products = await productsResponse.json();
+                        const lowStock = products
+                            .filter(p => p.manage_stock && p.stock_quantity > 0 && p.stock_quantity <= 5)
+                            .map(p => ({
+                                id: p.id,
+                                title: p.title,
+                                stock: p.stock_quantity,
+                                price: p.price,
+                                image: p.image,
+                                link: p.link,
+                                categories: p.categories
+                            }));
+                        
+                        if (lowStock.length > 0) {
+                            displayLowStockProducts(lowStock);
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('Failed to load low stock products:', error);
+            }
+        }
+
+        function displayAnalytics(analytics) {
+            // Update main metrics
+            document.getElementById('totalProducts').textContent = analytics.overview.total_products || 0;
+            
+            const inStockRate = analytics.overview.total_products > 0 
+                ? Math.round((analytics.overview.in_stock / analytics.overview.total_products) * 100)
+                : 0;
+            document.getElementById('inStockRate').textContent = inStockRate + '%';
+            document.getElementById('inStockCount').textContent = `${analytics.overview.in_stock} products available`;
+            
+            document.getElementById('avgPrice').textContent = '£' + (analytics.overview.average_price || 0).toFixed(2);
+            document.getElementById('onSaleCount').textContent = analytics.overview.on_sale || 0;
+            document.getElementById('lowStockCount').textContent = analytics.overview.low_stock || 0;
+            document.getElementById('totalInventory').textContent = (analytics.overview.total_inventory || 0).toLocaleString();
+            
+            // Calculate average discount
+            if (analytics.top_products && analytics.top_products.on_sale && analytics.top_products.on_sale.length > 0) {
+                const avgDiscount = analytics.top_products.on_sale.reduce((sum, p) => {
+                    const discount = parseInt(p.discount) || 0;
+                    return sum + discount;
+                }, 0) / analytics.top_products.on_sale.length;
+                document.getElementById('avgDiscount').textContent = `Avg discount: ${Math.round(avgDiscount)}%`;
+            }
+            
+            // Display price distribution
+            displayPriceDistribution(analytics.price_ranges);
+            
+            // Display stock levels
+            displayStockLevels(analytics.stock_levels);
+            
+            // Display categories
+            displayCategories(analytics.categories);
+            
+            // Display top products tables
+            displayTopRated(analytics.top_products.by_rating);
+            displayBestSellers(analytics.top_products.by_sales);
+            displayBiggestDiscounts(analytics.top_products.on_sale);
+        }
+
+        function displayPriceDistribution(priceRanges) {
+            const container = document.getElementById('priceDistribution');
+            const total = Object.values(priceRanges).reduce((sum, count) => sum + count, 0);
+            
+            container.innerHTML = Object.entries(priceRanges).map(([range, count]) => {
+                const percentage = total > 0 ? Math.round((count / total) * 100) : 0;
+                return `
+                    <div class="price-range">
+                        <div class="price-label">£${range}</div>
+                        <div class="price-bar-container">
+                            <div class="price-bar" style="width: ${percentage}%">
+                                ${count}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function displayStockLevels(stockLevels) {
+            const container = document.getElementById('stockChart');
+            
+            const stockData = [
+                { label: 'In Stock', count: stockLevels.high_stock + stockLevels.medium_stock, class: 'in-stock', desc: 'Available for purchase' },
+                { label: 'Low Stock', count: stockLevels.low_stock, class: 'low-stock', desc: '5 or fewer items' },
+                { label: 'Out of Stock', count: stockLevels.out_of_stock, class: 'out-stock', desc: 'Currently unavailable' },
+                { label: 'Unmanaged', count: stockLevels.unmanaged, class: 'unmanaged', desc: 'Stock not tracked' }
+            ];
+            
+            container.innerHTML = stockData.map(item => `
+                <div class="stock-item">
+                    <div class="stock-indicator ${item.class}">${item.count}</div>
+                    <div class="stock-info">
+                        <div class="stock-label">${item.label}</div>
+                        <div class="stock-desc">${item.desc}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function displayCategories(categories) {
+            const container = document.getElementById('categoryPills');
+            
+            // Sort categories by count
+            const sortedCategories = Object.entries(categories)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10); // Top 10 categories
+            
+            container.innerHTML = sortedCategories.map(([category, count]) => `
+                <div class="category-pill">
+                    <span>${category}</span>
+                    <span class="category-count">${count}</span>
+                </div>
+            `).join('');
+        }
+
+        function displayTopRated(products) {
+            const tbody = document.getElementById('topRatedProducts');
+            
+            if (!products || products.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 20px; color: #666;">No rated products yet</td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = products.map(product => `
+                <tr>
+                    <td>${product.title}</td>
+                    <td><span class="rating-stars">${'★'.repeat(Math.round(product.rating))}</span> ${product.rating}</td>
+                    <td>${product.reviews} reviews</td>
+                    <td>£${product.price || 'N/A'}</td>
+                    <td><a href="/catalog#${product.id}" class="view-product-btn">View</a></td>
+                </tr>
+            `).join('');
+        }
+
+        function displayBestSellers(products) {
+            const tbody = document.getElementById('bestSellers');
+            
+            if (!products || products.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 20px; color: #666;">No sales data available</td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = products.map(product => `
+                <tr>
+                    <td>${product.title}</td>
+                    <td>${product.sales} sold</td>
+                    <td>£${product.revenue.toFixed(2)}</td>
+                    <td>${product.stock || 'N/A'}</td>
+                    <td><a href="/catalog#${product.id}" class="view-product-btn">View</a></td>
+                </tr>
+            `).join('');
+        }
+
+        function displayBiggestDiscounts(products) {
+            const tbody = document.getElementById('biggestDiscounts');
+            
+            if (!products || products.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 20px; color: #666;">No products on sale</td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = products.map(product => `
+                <tr>
+                    <td>${product.title}</td>
+                    <td style="color: #ff4444; font-weight: 600;">${product.discount}</td>
+                    <td><del>£${product.was}</del></td>
+                    <td style="color: #00BFA5; font-weight: 600;">£${product.price}</td>
+                    <td><a href="/catalog#${product.id}" class="view-product-btn">View</a></td>
+                </tr>
+            `).join('');
+        }
+
+        function displayLowStockProducts(products) {
+            const section = document.getElementById('lowStockSection');
+            const tbody = document.getElementById('lowStockProducts');
+            
+            section.style.display = 'block';
+            
+            tbody.innerHTML = products.map(product => `
+                <tr>
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            ${product.image ? `<img src="${product.image}" alt="${product.title}" class="product-thumb">` : ''}
+                            <span>${product.title}</span>
+                        </div>
+                    </td>
+                    <td style="color: #ff9944; font-weight: 600;">${product.stock} left</td>
+                    <td>£${product.price}</td>
+                    <td>${product.categories || 'N/A'}</td>
+                    <td><a href="${product.link}" target="_blank" class="view-product-btn">View</a></td>
+                </tr>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
