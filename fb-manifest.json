@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "sku": "180131_420",
+    "originalUrl": "https://scotch-soda.co.uk/wp-content/uploads/2025/06/180131_420_MDL_CRP-copy.webp",
+    "filename": "180131_420_MDL_CRP-copy_fb.png",
+    "url": "/product-images/180131_420_MDL_CRP-copy_fb.png",
+    "processedAt": "2025-07-15T19:08:57.337Z",
+    "size": 193873
+  },
+  {
+    "sku": "180131_420_1",
+    "originalUrl": "https://scotch-soda.co.uk/wp-content/uploads/2025/06/180131_420_MDL_FNT-copy.webp",
+    "filename": "180131_420_MDL_FNT-copy_fb.png",
+    "url": "/product-images/180131_420_MDL_FNT-copy_fb.png",
+    "processedAt": "2025-07-15T19:08:59.302Z",
+    "size": 111848
+  },
+  {
+    "sku": "180131_420_2",
+    "originalUrl": "https://scotch-soda.co.uk/wp-content/uploads/2025/06/180131_420_MDL_BCK-copy.webp",
+    "filename": "180131_420_MDL_BCK-copy_fb.png",
+    "url": "/product-images/180131_420_MDL_BCK-copy_fb.png",
+    "processedAt": "2025-07-15T19:09:01.394Z",
+    "size": 114564
+  },
+  {
+    "sku": "180131_420_3",
+    "originalUrl": "https://scotch-soda.co.uk/wp-content/uploads/2025/06/180131_420_MDL_DTL-copy.webp",
+    "filename": "180131_420_MDL_DTL-copy_fb.png",
+    "url": "/product-images/180131_420_MDL_DTL-copy_fb.png",
+    "processedAt": "2025-07-15T19:09:04.223Z",
+    "size": 425515
+  }
+]

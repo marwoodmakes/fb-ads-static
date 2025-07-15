@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "180131_420",
+    "title": "Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)",
+    "description": "<p>Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)</p>\n",
+    "price": "77.00",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_CRP-copy_fb.png",
+    "link": "https://scotch-soda.co.uk/product/yarn-dyed-linen-blend-striped-regular-fit-shirt-medium-blue/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - Shirts > Men Sale > Sale",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_DTL-copy_fb.png"
+    ]
+  }
+]

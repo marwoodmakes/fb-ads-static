@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:g="http://base.google.com/ns/1.0"><channel><title>Empty Feed</title></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Scotch &amp; Soda Product Catalog - Processed Products Only</title>
+    <link>https://scotch-soda.co.uk/</link>
+    <description>Product catalog for Meta (Facebook &amp; Instagram) advertising - contains only products with processed images</description>
+    <item>
+      <g:id>180131_420</g:id>
+      <g:title>Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)</g:title>
+      <g:description>Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/yarn-dyed-linen-blend-striped-regular-fit-shirt-medium-blue/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/180131_420_MDL_CRP-copy_fb.png</g:image_link>
+      <g:price>77.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180131_420_MDL_FNT-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180131_420_MDL_BCK-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180131_420_MDL_DTL-copy_fb.png</g:additional_image_link>
+    </item>
+  </channel>
+</rss>
