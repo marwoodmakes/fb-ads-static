@@ -10,7 +10,7 @@
     "on_sale": true,
     "sale_percentage": 0,
     "currency": "GBP",
-    "availability": "out of stock",
+    "availability": "in stock",
     "stock_status": "outofstock",
     "stock_quantity": 0,
     "manage_stock": false,
@@ -73,7 +73,7 @@
     "review_count": 0,
     "total_sales": 0,
     "has_processed_image": true,
-    "processed_at": "2025-07-15T19:27:41.313Z"
+    "processed_at": "2025-07-15T19:50:43.014Z"
   },
   {
     "id": "113775",
@@ -86,7 +86,7 @@
     "on_sale": false,
     "sale_percentage": 0,
     "currency": "GBP",
-    "availability": "out of stock",
+    "availability": "in stock",
     "stock_status": "outofstock",
     "stock_quantity": 0,
     "manage_stock": false,
@@ -149,6 +149,84 @@
     "review_count": 0,
     "total_sales": 0,
     "has_processed_image": true,
-    "processed_at": "2025-07-15T19:27:41.313Z"
+    "processed_at": "2025-07-15T19:50:43.014Z"
+  },
+  {
+    "id": "113768",
+    "woo_id": 113768,
+    "title": "Loose Fit Applique T-Shirt (Navy)",
+    "description": "<p>Loose Fit Applique T-Shirt (Navy)</p>\n",
+    "price": "70",
+    "regular_price": "70",
+    "sale_price": "",
+    "on_sale": false,
+    "sale_percentage": 0,
+    "currency": "GBP",
+    "availability": "in stock",
+    "stock_status": "outofstock",
+    "stock_quantity": 0,
+    "manage_stock": false,
+    "backorders_allowed": false,
+    "low_stock_amount": 5,
+    "image": "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_CRP-copy_fb.png",
+    "original_image": "https://scotch-soda.co.uk/wp-content/uploads/2025/06/180350_401_MDL_CRP-copy.webp",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_DTL-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_4400_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_4400_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_4400_DTL6-copy_fb.png"
+    ],
+    "link": "https://scotch-soda.co.uk/product/loose-fit-applique-t-shirt-navy/",
+    "brand": "Scotch & Soda",
+    "condition": "new",
+    "color": "",
+    "size": "",
+    "material": "",
+    "style_code": "",
+    "gender": "Unisex",
+    "age_group": "Adult",
+    "categories": "NoCategory",
+    "category_ids": [
+      5415
+    ],
+    "google_product_category": "Apparel & Accessories",
+    "tags": [
+      "Summer 25"
+    ],
+    "tag_ids": [
+      384
+    ],
+    "type": "variable",
+    "variations": [
+      113772,
+      113773,
+      113769,
+      113770,
+      113771
+    ],
+    "variation_count": 5,
+    "parent_id": 0,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_class": "",
+    "shipping_required": true,
+    "date_created": "2025-06-30T15:21:35",
+    "date_modified": "2025-07-15T13:55:08",
+    "date_on_sale_from": null,
+    "date_on_sale_to": null,
+    "catalog_visibility": "visible",
+    "featured": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "review_count": 0,
+    "total_sales": 0,
+    "has_processed_image": true,
+    "processed_at": "2025-07-15T19:50:43.014Z"
   }
 ]
