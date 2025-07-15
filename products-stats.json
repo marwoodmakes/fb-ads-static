@@ -1,1 +1,13 @@
-[]
+{
+  "total_products": 1,
+  "in_stock": 1,
+  "out_of_stock": 0,
+  "on_sale": 1,
+  "low_stock": 0,
+  "featured": 0,
+  "average_price": 77,
+  "total_inventory": 7,
+  "categories": 4,
+  "brands": 1,
+  "generated_at": "2025-07-15T22:40:57.781Z"
+}
