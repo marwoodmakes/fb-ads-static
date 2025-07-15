@@ -74,6 +74,85 @@
     "review_count": 0,
     "total_sales": 0,
     "has_original_image": true,
-    "processed_at": "2025-07-15T22:40:57.781Z"
+    "processed_at": "2025-07-15T22:51:05.957Z"
+  },
+  {
+    "id": "179899_401",
+    "woo_id": 113762,
+    "title": "Front And Back Artwork Hoodie (Navy)",
+    "description": "<p>Front And Back Artwork Hoodie (Navy)</p>\n",
+    "price": "91.00",
+    "regular_price": "91.00",
+    "sale_price": "",
+    "on_sale": true,
+    "sale_percentage": 0,
+    "currency": "GBP",
+    "availability": "in stock",
+    "stock_status": "instock",
+    "stock_quantity": 13,
+    "manage_stock": false,
+    "backorders_allowed": false,
+    "low_stock_amount": 5,
+    "image": "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_CRP_FNT-copy_fb.png",
+    "original_image": "https://scotch-soda.co.uk/wp-content/uploads/2025/06/179899_401_MDL_CRP_FNT-copy.webp",
+    "has_processed_image": true,
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_DTL-copy_fb.png"
+    ],
+    "link": "https://scotch-soda.co.uk/product/front-and-back-artwork-hoodie-navy/",
+    "brand": "Scotch & Soda",
+    "condition": "new",
+    "color": "",
+    "size": "",
+    "material": "",
+    "style_code": "",
+    "gender": "Unisex",
+    "age_group": "Adult",
+    "categories": "All Men's Clothing > Men - Sweatshirts > Men Sale > Sale",
+    "category_ids": [
+      149,
+      81,
+      5330,
+      5328
+    ],
+    "google_product_category": "Apparel & Accessories",
+    "tags": [
+      "Summer 25"
+    ],
+    "tag_ids": [
+      384
+    ],
+    "type": "variable",
+    "variations": [
+      113763,
+      113764,
+      113765,
+      113766,
+      113767
+    ],
+    "variation_count": 5,
+    "parent_id": 0,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_class": "",
+    "shipping_required": true,
+    "date_created": "2025-06-30T15:21:34",
+    "date_modified": "2025-07-10T19:22:46",
+    "date_on_sale_from": null,
+    "date_on_sale_to": null,
+    "catalog_visibility": "visible",
+    "featured": false,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "review_count": 0,
+    "total_sales": 0,
+    "has_original_image": true,
+    "processed_at": "2025-07-15T22:51:05.957Z"
   }
 ]
