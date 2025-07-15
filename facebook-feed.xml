@@ -77,5 +77,40 @@
       <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/179899_401_MDL_BCK-copy_fb.png</g:additional_image_link>
       <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/179899_401_MDL_DTL-copy_fb.png</g:additional_image_link>
     </item>
+    <item>
+      <g:id>SS123275_001-OS</g:id>
+      <g:title>3Pk Mens 1/2 Terry Crew (Black)</g:title>
+      <g:description>3Pk Mens 1/2 Terry Crew (Black)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/3pk-mens-1-2-terry-crew-black/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/LKJHG_fb.png</g:image_link>
+      <g:price>35.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/WEDRFTY_fb.png</g:additional_image_link>
+    </item>
+    <item>
+      <g:id>113757</g:id>
+      <g:title>Regular Fit 3 Crosses Cotton-Linen T-Shirt (Medium Blue)</g:title>
+      <g:description>Regular Fit 3 Crosses Cotton-Linen T-Shirt (Medium Blue)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/regular-fit-3-crosses-cotton-linen-t-shirt-medium-blue/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/180045_420_MDL_CRP-copy_fb.png</g:image_link>
+      <g:price>45.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180045_420_MDL_FNT-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180045_420_MDL_BCK-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180045_420_MDL_DTL-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180045_7416_FNT-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180045_7416_BCK-copy_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180045_7416_DTL6-copy_fb.png</g:additional_image_link>
+    </item>
   </channel>
 </rss>
