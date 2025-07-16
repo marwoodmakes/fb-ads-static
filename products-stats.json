@@ -3,13 +3,76 @@
   "square_total_units_sold_90d": 0,
   "square_total_orders": 0,
   "square_unique_customers": 0,
-  "square_total_inventory": 0,
+  "square_total_inventory": 4289,
   "stockout_alerts": 0,
-  "overstock_alerts": 0,
-  "square_top_products": [],
+  "overstock_alerts": 8176,
+  "square_top_products": [
+    {
+      "sku": "178696",
+      "name": "29-32",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "4001847",
+      "name": "L/XL, Black, FA25",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "6827015",
+      "name": "S, Black, FA25",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "6908275",
+      "name": "38-34, Black, FA25",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "9718183",
+      "name": "Regular",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "177468_6954-OS",
+      "name": "OS",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "178912_6896-29IN",
+      "name": "29IN",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "178912_6896-33IN",
+      "name": "33IN",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "178912_6896-36IN",
+      "name": "36IN",
+      "units_sold": 0,
+      "revenue": 0
+    },
+    {
+      "sku": "178912_6896-31IN",
+      "name": "31IN",
+      "units_sold": 0,
+      "revenue": 0
+    }
+  ],
   "square_integration": {
     "enabled": true,
-    "last_sync": "2025-07-16T20:06:04.525Z"
+    "last_sync": "2025-07-16T20:40:24.103Z"
   },
-  "generated_at": "2025-07-16T20:06:04.525Z"
+  "generated_at": "2025-07-16T20:40:24.103Z",
+  "facebook_feed_products": 39,
+  "square_matched_products": 0
 }

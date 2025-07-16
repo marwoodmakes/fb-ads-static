@@ -268,7 +268,57 @@
     "categories": "All Women's Clothing > Ladies - Accessories > Sale > Women Sale",
     "additional_images": [
       "https://fb-ads-static.onrender.com/product-images/UF500710M-U247_FNT_fb.png"
-    ]
+    ],
+    "stock_quantity": 6,
+    "square_inventory": 6,
+    "square_inventory_by_location": {
+      "L15Q23M6BKXQN": {
+        "IN_STOCK": {
+          "quantity": 0,
+          "calculated_at": "2025-03-04T14:10:19.41Z"
+        }
+      },
+      "LCM18EX71STQX": {
+        "IN_STOCK": {
+          "quantity": 6,
+          "calculated_at": "2025-06-22T10:46:14.576Z"
+        },
+        "ORDERED_FROM_VENDOR": {
+          "quantity": 0,
+          "calculated_at": "2025-05-02T17:42:40.444Z"
+        }
+      }
+    },
+    "total_sales": 0,
+    "total_revenue": 0,
+    "square_sales": 0,
+    "square_revenue": 0,
+    "stock_status": "instock",
+    "square_data": {
+      "last_updated": "2025-07-16T20:40:23.558Z",
+      "performance": {
+        "units_sold_90d": 0,
+        "revenue_90d": 0,
+        "return_rate": "0.00",
+        "sell_through_rate": "0.00",
+        "daily_velocity": "0.00",
+        "best_selling_day": "Sunday",
+        "best_selling_hour": 0
+      },
+      "inventory": {
+        "current_stock": 6,
+        "reserved": 0,
+        "in_transit": 0,
+        "days_of_supply": "999.0",
+        "stockout_risk": false,
+        "overstock_risk": true
+      },
+      "metrics": {
+        "unique_customers": 0,
+        "average_order_quantity": 0,
+        "inventory_turnover": "0.00"
+      }
+    }
   },
   {
     "id": "UFK00729M_247",
@@ -330,7 +380,57 @@
     "categories": "All Women's Clothing > Ladies - Accessories > Sale > Season Fav's > Women Sale",
     "additional_images": [
       "https://fb-ads-static.onrender.com/product-images/UF400711M-U134_BCK_fb.png"
-    ]
+    ],
+    "stock_quantity": 11,
+    "square_inventory": 11,
+    "square_inventory_by_location": {
+      "L15Q23M6BKXQN": {
+        "IN_STOCK": {
+          "quantity": 0,
+          "calculated_at": "2025-03-04T14:10:16.866Z"
+        }
+      },
+      "LCM18EX71STQX": {
+        "IN_STOCK": {
+          "quantity": 11,
+          "calculated_at": "2025-06-22T10:46:14.454Z"
+        },
+        "ORDERED_FROM_VENDOR": {
+          "quantity": 0,
+          "calculated_at": "2025-05-02T17:42:40.391Z"
+        }
+      }
+    },
+    "total_sales": 0,
+    "total_revenue": 0,
+    "square_sales": 0,
+    "square_revenue": 0,
+    "stock_status": "instock",
+    "square_data": {
+      "last_updated": "2025-07-16T20:40:23.558Z",
+      "performance": {
+        "units_sold_90d": 0,
+        "revenue_90d": 0,
+        "return_rate": "0.00",
+        "sell_through_rate": "0.00",
+        "daily_velocity": "0.00",
+        "best_selling_day": "Sunday",
+        "best_selling_hour": 0
+      },
+      "inventory": {
+        "current_stock": 11,
+        "reserved": 0,
+        "in_transit": 0,
+        "days_of_supply": "999.0",
+        "stockout_risk": false,
+        "overstock_risk": true
+      },
+      "metrics": {
+        "unique_customers": 0,
+        "average_order_quantity": 0,
+        "inventory_turnover": "0.00"
+      }
+    }
   },
   {
     "id": "ULH00594F_248",
@@ -523,7 +623,61 @@
     "additional_images": [
       "https://fb-ads-static.onrender.com/product-images/UF400716M-U130_DTL6_fb.png",
       "https://fb-ads-static.onrender.com/product-images/UF400716M-U130_RVSB_fb.png"
-    ]
+    ],
+    "stock_quantity": 1,
+    "square_inventory": 1,
+    "square_inventory_by_location": {
+      "L15Q23M6BKXQN": {
+        "IN_STOCK": {
+          "quantity": 0,
+          "calculated_at": "2025-03-04T14:10:21.011Z"
+        }
+      },
+      "LCM18EX71STQX": {
+        "IN_STOCK": {
+          "quantity": 1,
+          "calculated_at": "2025-06-22T10:45:46.377Z"
+        },
+        "RETURNED_BY_CUSTOMER": {
+          "quantity": 0,
+          "calculated_at": "2025-05-10T11:22:02.901Z"
+        },
+        "ORDERED_FROM_VENDOR": {
+          "quantity": 0,
+          "calculated_at": "2025-03-28T12:02:53.63Z"
+        }
+      }
+    },
+    "total_sales": 0,
+    "total_revenue": 0,
+    "square_sales": 0,
+    "square_revenue": 0,
+    "stock_status": "instock",
+    "square_data": {
+      "last_updated": "2025-07-16T20:40:23.558Z",
+      "performance": {
+        "units_sold_90d": 0,
+        "revenue_90d": 0,
+        "return_rate": "0.00",
+        "sell_through_rate": "0.00",
+        "daily_velocity": "0.00",
+        "best_selling_day": "Sunday",
+        "best_selling_hour": 0
+      },
+      "inventory": {
+        "current_stock": 1,
+        "reserved": 0,
+        "in_transit": 0,
+        "days_of_supply": "999.0",
+        "stockout_risk": false,
+        "overstock_risk": true
+      },
+      "metrics": {
+        "unique_customers": 0,
+        "average_order_quantity": 0,
+        "inventory_turnover": "0.00"
+      }
+    }
   },
   {
     "id": "U9A00685T_111",
@@ -617,7 +771,57 @@
     "categories": "All Women's Clothing > Ladies - Accessories > Sale > Women Sale",
     "additional_images": [
       "https://fb-ads-static.onrender.com/product-images/UF500709M-U001_BCK_fb.png"
-    ]
+    ],
+    "stock_quantity": 4,
+    "square_inventory": 4,
+    "square_inventory_by_location": {
+      "L15Q23M6BKXQN": {
+        "IN_STOCK": {
+          "quantity": 0,
+          "calculated_at": "2025-03-04T14:10:22.051Z"
+        }
+      },
+      "LCM18EX71STQX": {
+        "IN_STOCK": {
+          "quantity": 4,
+          "calculated_at": "2025-06-22T10:46:14.467Z"
+        },
+        "ORDERED_FROM_VENDOR": {
+          "quantity": 0,
+          "calculated_at": "2025-03-29T12:28:27.242Z"
+        }
+      }
+    },
+    "total_sales": 0,
+    "total_revenue": 0,
+    "square_sales": 0,
+    "square_revenue": 0,
+    "stock_status": "instock",
+    "square_data": {
+      "last_updated": "2025-07-16T20:40:23.558Z",
+      "performance": {
+        "units_sold_90d": 0,
+        "revenue_90d": 0,
+        "return_rate": "0.00",
+        "sell_through_rate": "0.00",
+        "daily_velocity": "0.00",
+        "best_selling_day": "Sunday",
+        "best_selling_hour": 0
+      },
+      "inventory": {
+        "current_stock": 4,
+        "reserved": 0,
+        "in_transit": 0,
+        "days_of_supply": "999.0",
+        "stockout_risk": false,
+        "overstock_risk": true
+      },
+      "metrics": {
+        "unique_customers": 0,
+        "average_order_quantity": 0,
+        "inventory_turnover": "0.00"
+      }
+    }
   },
   {
     "id": "U9A00698T_738",
