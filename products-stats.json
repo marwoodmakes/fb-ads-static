@@ -1,1 +1,15 @@
-[]
+{
+  "square_total_revenue_90d": 0,
+  "square_total_units_sold_90d": 0,
+  "square_total_orders": 0,
+  "square_unique_customers": 0,
+  "square_total_inventory": 0,
+  "stockout_alerts": 0,
+  "overstock_alerts": 0,
+  "square_top_products": [],
+  "square_integration": {
+    "enabled": true,
+    "last_sync": "2025-07-16T19:35:05.437Z"
+  },
+  "generated_at": "2025-07-16T19:35:05.437Z"
+}
