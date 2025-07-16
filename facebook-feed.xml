@@ -132,5 +132,43 @@
       <g:age_group>adult</g:age_group>
       <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/WEDRFTY_fb.png</g:additional_image_link>
     </item>
+    <item>
+      <g:id>product_113744</g:id>
+      <g:title>Embroidered Chest Artwork Relaxed Fit Sweatshirt (White/Pastel)</g:title>
+      <g:description>Embroidered Chest Artwork Relaxed Fit Sweatshirt (White/Pastel)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/embroidered-chest-artwork-relaxed-fit-sweatshirt-white-pastel/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/180190_101_MDL_CRP_FNT_fb.png</g:image_link>
+      <g:price>120.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180190_101_MDL_FNT_2_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180190_101_MDL_BCK_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/25174132-FNT_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/25174132-BCK_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/25174132-DTL6_fb.png</g:additional_image_link>
+    </item>
+    <item>
+      <g:id>180074_001</g:id>
+      <g:title>Regular Fit Front And Back Artwork Sweatshirt (Black)</g:title>
+      <g:description>Regular Fit Front And Back Artwork Sweatshirt (Black)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/regular-fit-front-and-back-artwork-sweatshirt-black/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/180074_001_MDL_CRP_fb.png</g:image_link>
+      <g:price>77.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180074_001_MDL_FNT_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180074_001_MDL_BCK_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180074_0157_FNT_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180074_0157_BCK_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/180074_0157_DTL6_fb.png</g:additional_image_link>
+    </item>
   </channel>
 </rss>
