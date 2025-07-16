@@ -617,17 +617,24 @@
     </div>
 
     <script>
+        const RENDER_URL = window.location.origin;
+
         let allProducts = [];
         let currentFilter = 'all';
         let syncInterval = null;
 
         // Initialize
-        window.onload = function() {
-            loadProducts();
-            checkStatus();
-            // Check status every 5 seconds
-            setInterval(checkStatus, 5000);
-        };
+       window.onload = function() {
+    // Update feed URL
+    const feedUrlElement = document.querySelector('code');
+    if (feedUrlElement) {
+        feedUrlElement.textContent = `${RENDER_URL}/facebook-feed.xml`;
+    }
+    
+    loadProducts();
+    checkStatus();
+    setInterval(checkStatus, 5000);
+};
 
         // Check sync status
         async function checkStatus() {
@@ -769,7 +776,7 @@
             if (allProducts.length > 0) {
                 const totalPrice = allProducts.reduce((sum, p) => sum + (parseFloat(p.price) || 0), 0);
                 const avgPrice = (totalPrice / allProducts.length).toFixed(2);
-                document.getElementById('avgPrice').textContent = '€' + avgPrice;
+                document.getElementById('avgPrice').textContent = '£' + avgPrice;
             }
         }
 
@@ -825,6 +832,29 @@
         document.getElementById('search').addEventListener('input', (e) => {
             renderProducts(e.target.value);
         });
+
+function createProductCard(product) {
+    return `
+        <div class="product-card" onclick="window.open('${product.link}', '_blank')">
+            <div class="product-image">
+                <img 
+                    src="${product.image || ''}" 
+                    alt="${product.title}"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+            </div>
+            <div class="product-info">
+                <div class="product-title">${product.title}</div>
+                <div class="product-price">£${product.price}</div>
+                <div class="product-meta">
+                    ${product.id} • 
+                    ${product.availability}
+                </div>
+            </div>
+        </div>
+    `;
+}
 
         // Filter functionality
         document.getElementById('filters').addEventListener('click', (e) => {
