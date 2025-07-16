@@ -1,1 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:g="http://base.google.com/ns/1.0"><channel><title>Empty Feed</title></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Scotch &amp; Soda Product Catalog - Processed Products Only</title>
+    <link>https://scotch-soda.co.uk/</link>
+    <description>Product catalog for Meta (Facebook &amp; Instagram) advertising - contains only products with processed images</description>
+    <item>
+      <g:id>181164_270</g:id>
+      <g:title>Relaxed-Fit Cotton Linen Twill 2-Button Blazer (Light Beige)</g:title>
+      <g:description>Relaxed-Fit Cotton Linen Twill 2-Button Blazer (Light Beige)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/relaxed-fit-cotton-linen-twill-2-button-blazer-light-beige/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/181164_8016-FNT_bg_fb.png</g:image_link>
+      <g:price>215.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181164_270_R_10_FNT_bg-1_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181164_270_R_10_FNT_C_bg-1_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181164_8016-BCK_bg-1_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181164_270_R_10_BCK_C_bg-1_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181164_8016-DTL6_bg-1_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181164_270_R_10_DTL_bg-1_fb.png</g:additional_image_link>
+    </item>
+    <item>
+      <g:id>181159_410</g:id>
+      <g:title>Regular-Fit Unconstructed Cotton-Blend Seersucker Blazer (Navy)</g:title>
+      <g:description>Regular-Fit Unconstructed Cotton-Blend Seersucker Blazer (Navy)</g:description>
+      <g:link>https://scotch-soda.co.uk/product/regular-fit-unconstructed-cotton-blend-seersucker-blazer-navy/</g:link>
+      <g:image_link>https://fb-ads-static.onrender.com/product-images/181159_8284-FNT_bg_fb.png</g:image_link>
+      <g:price>190.00 GBP</g:price>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:brand>Scotch &amp; Soda</g:brand>
+      <g:google_product_category>Apparel &amp; Accessories</g:google_product_category>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181159_410_R_10_FNT_bg_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181159_410_R_10_FNT_C_bg_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181159_8284-BCK_bg_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181159_410_R_10_BCK_C_bg_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181159_8284-DTL6_bg_fb.png</g:additional_image_link>
+      <g:additional_image_link>https://fb-ads-static.onrender.com/product-images/181159_410_R_10_DTL_bg_fb.png</g:additional_image_link>
+    </item>
+  </channel>
+</rss>

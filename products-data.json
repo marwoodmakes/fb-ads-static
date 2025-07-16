@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "181164_270",
+    "title": "Relaxed-Fit Cotton Linen Twill 2-Button Blazer (Light Beige)",
+    "description": "<p>Relaxed-Fit Cotton Linen Twill 2-Button Blazer (Light Beige)</p>\n",
+    "price": "215",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/181164_8016-FNT_bg_fb.png",
+    "link": "https://scotch-soda.co.uk/product/relaxed-fit-cotton-linen-twill-2-button-blazer-light-beige/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "Men - Blazers (FA25)",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/181164_270_R_10_FNT_bg-1_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181164_270_R_10_FNT_C_bg-1_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181164_8016-BCK_bg-1_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181164_270_R_10_BCK_C_bg-1_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181164_8016-DTL6_bg-1_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181164_270_R_10_DTL_bg-1_fb.png"
+    ]
+  },
+  {
+    "id": "181159_410",
+    "title": "Regular-Fit Unconstructed Cotton-Blend Seersucker Blazer (Navy)",
+    "description": "<p>Regular-Fit Unconstructed Cotton-Blend Seersucker Blazer (Navy)</p>\n",
+    "price": "190",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/181159_8284-FNT_bg_fb.png",
+    "link": "https://scotch-soda.co.uk/product/regular-fit-unconstructed-cotton-blend-seersucker-blazer-navy/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "Men - Blazers (FA25)",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/181159_410_R_10_FNT_bg_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181159_410_R_10_FNT_C_bg_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181159_8284-BCK_bg_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181159_410_R_10_BCK_C_bg_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181159_8284-DTL6_bg_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/181159_410_R_10_DTL_bg_fb.png"
+    ]
+  }
+]
