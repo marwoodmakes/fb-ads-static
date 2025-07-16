@@ -1,0 +1,140 @@
+{
+  "generated_at": "2025-07-16T20:40:23.558Z",
+  "summary": {
+    "by_hour": {},
+    "by_day": {},
+    "by_week": {},
+    "by_month": {},
+    "by_location": {},
+    "by_customer": {},
+    "by_payment_method": {},
+    "by_device": {},
+    "total_revenue": 0,
+    "total_orders": 0,
+    "total_items": 0
+  },
+  "top_products": [
+    {
+      "sku": "178696",
+      "name": "29-32",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "4001847",
+      "name": "L/XL, Black, FA25",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "6827015",
+      "name": "S, Black, FA25",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "6908275",
+      "name": "38-34, Black, FA25",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "9718183",
+      "name": "Regular",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "177468_6954-OS",
+      "name": "OS",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-29IN",
+      "name": "29IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-33IN",
+      "name": "33IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-36IN",
+      "name": "36IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-31IN",
+      "name": "31IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-34IN",
+      "name": "34IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-32IN",
+      "name": "32IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "178912_6896-30IN",
+      "name": "30IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-29IN",
+      "name": "29IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-33IN",
+      "name": "33IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-36IN",
+      "name": "36IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-31IN",
+      "name": "31IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-34IN",
+      "name": "34IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-32IN",
+      "name": "32IN",
+      "revenue": 0,
+      "units_sold": 0
+    },
+    {
+      "sku": "175471_7057-30IN",
+      "name": "30IN",
+      "revenue": 0,
+      "units_sold": 0
+    }
+  ],
+  "payment_methods": {},
+  "hourly_distribution": {}
+}
