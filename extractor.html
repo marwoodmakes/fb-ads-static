@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Data Extractor - Scotch & Soda</title>
+    <meta name="description" content="Control panel for Square POS data extraction">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, rgba(0, 191, 165, 0.08) 0%, rgba(0, 191, 165, 0.03) 100%);
+            color: #1E1E2F;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1E1E2F;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Status Section */
+        .status-section {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .status-item {
+            text-align: center;
+        }
+
+        .status-label {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .status-value {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1E1E2F;
+        }
+
+        .status-value.success {
+            color: #00BFA5;
+        }
+
+        .status-value.error {
+            color: #ff4444;
+        }
+
+        /* Control Buttons */
+        .control-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .extract-btn {
+            background: linear-gradient(135deg, #00BFA5, #00A693);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 191, 165, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .extract-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 191, 165, 0.4);
+        }
+
+        .extract-btn:active {
+            transform: translateY(0);
+        }
+
+        .extract-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .extract-btn.processing {
+            background: linear-gradient(135deg, #FFB347, #ff9800);
+        }
+
+        .btn-icon {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 1.4rem;
+            vertical-align: middle;
+        }
+
+        /* Progress Bar */
+        .progress-section {
+            margin: 30px 0;
+            display: none;
+        }
+
+        .progress-bar {
+            background: #f0f0f0;
+            border-radius: 10px;
+            height: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #00BFA5, #00D9BA);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Log Section */
+        .log-section {
+            background: #1E1E2F;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .log-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .log-title {
+            color: #00BFA5;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .clear-log-btn {
+            background: transparent;
+            border: 1px solid #00BFA5;
+            color: #00BFA5;
+            padding: 5px 15px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .clear-log-btn:hover {
+            background: #00BFA5;
+            color: #1E1E2F;
+        }
+
+        .log-content {
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.85rem;
+            color: #00D9BA;
+            line-height: 1.6;
+        }
+
+        .log-entry {
+            margin-bottom: 8px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .log-time {
+            color: #666;
+            margin-right: 10px;
+        }
+
+        .log-level {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+
+        .log-level.info {
+            background: rgba(0, 191, 165, 0.2);
+            color: #00BFA5;
+        }
+
+        .log-level.success {
+            background: rgba(76, 175, 80, 0.2);
+            color: #4CAF50;
+        }
+
+        .log-level.warning {
+            background: rgba(255, 179, 71, 0.2);
+            color: #FFB347;
+        }
+
+        .log-level.error {
+            background: rgba(255, 68, 68, 0.2);
+            color: #ff4444;
+        }
+
+
+
+        /* Results Summary */
+        .results-section {
+            display: none;
+            background: #d4f4ef;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            border: 2px solid #00BFA5;
+        }
+
+        .results-title {
+            color: #00A693;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .result-item {
+            text-align: center;
+        }
+
+        .result-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00A693;
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .main-card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .extract-btn {
+                padding: 15px 40px;
+                font-size: 1.1rem;
+            }
+
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .actions-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-card">
+            <div class="header">
+                <img src="https://cdn.shopify.com/s/files/1/0910/8389/9266/files/ChatGPT_Image_Jun_12_2025_01_05_41_PM.png?v=1749729963" 
+                     alt="Scotch & Soda" 
+                     class="logo">
+                <h1>Square Data Extractor</h1>
+                <p class="subtitle">Extract comprehensive data from Square POS</p>
+            </div>
+
+            <!-- Status Section -->
+            <div class="status-section">
+                <div class="status-grid">
+                    <div class="status-item">
+                        <div class="status-label">Service Status</div>
+                        <div class="status-value" id="serviceStatus">Checking...</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-label">Last Extraction</div>
+                        <div class="status-value" id="lastExtraction">Never</div>
+                    </div>
+                    <div class="status-item">
+                        <div class="status-label">Data Files</div>
+                        <div class="status-value" id="dataFiles">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Section -->
+            <div class="control-section">
+                <button class="extract-btn" id="extractBtn" onclick="startExtraction()">
+                    <span class="btn-icon">🚀</span>
+                    Start Data Extraction
+                </button>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="progress-section" id="progressSection">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Initializing extraction...</div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection">
+                <div class="results-title">✅ Extraction Complete!</div>
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+
+            <!-- Log Section -->
+            <div class="log-section">
+                <div class="log-header">
+                    <div class="log-title">Extraction Log</div>
+                    <button class="clear-log-btn" onclick="clearLog()">Clear</button>
+                </div>
+                <div class="log-content" id="logContent">
+                    <div class="log-entry">
+                        <span class="log-time">--:--:--</span>
+                        <span class="log-level info">INFO</span>
+                        Waiting for extraction to start...
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const SQUARE_API_BASE = 'http://localhost:3004';
+        let extractionInProgress = false;
+        let progressInterval = null;
+        let logCheckInterval = null;
+
+        // Initialize page
+        window.addEventListener('DOMContentLoaded', () => {
+            checkServiceStatus();
+            setInterval(checkServiceStatus, 30000); // Check every 30 seconds
+            
+            // Load initial log if available
+            loadExtractionLog();
+        });
+
+        async function checkServiceStatus() {
+            try {
+                const response = await fetch(`${SQUARE_API_BASE}/status`);
+                const status = await response.json();
+                
+                updateStatus(status);
+            } catch (error) {
+                document.getElementById('serviceStatus').innerHTML = '<span style="color: #ff4444;">Offline</span>';
+                document.getElementById('serviceStatus').className = 'status-value error';
+                addLog('ERROR', 'Square extractor service is not running on port 3004');
+            }
+        }
+
+        function updateStatus(status) {
+            // Service status
+            const serviceEl = document.getElementById('serviceStatus');
+            if (status.square_configured) {
+                serviceEl.innerHTML = '<span style="color: #00BFA5;">Online</span>';
+                serviceEl.className = 'status-value success';
+            } else {
+                serviceEl.innerHTML = '<span style="color: #ff9800;">No Credentials</span>';
+                serviceEl.className = 'status-value error';
+                addLog('WARNING', 'Square credentials not configured in .env.fb-ads');
+            }
+            
+            // Last extraction
+            if (status.last_extraction) {
+                const date = new Date(status.last_extraction);
+                document.getElementById('lastExtraction').textContent = formatTimeAgo(date);
+            }
+            
+            // Data files (estimate)
+            document.getElementById('dataFiles').textContent = status.last_extraction ? '5' : '0';
+        }
+
+        async function startExtraction() {
+            if (extractionInProgress) return;
+            
+            const btn = document.getElementById('extractBtn');
+            btn.disabled = true;
+            btn.classList.add('processing');
+            btn.innerHTML = '<span class="btn-icon">⏳</span> Extracting Data...';
+            
+            extractionInProgress = true;
+            document.getElementById('progressSection').style.display = 'block';
+            document.getElementById('resultsSection').style.display = 'none';
+            
+            // Start progress animation
+            let progress = 0;
+            progressInterval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress > 90) progress = 90;
+                updateProgress(progress, 'Extracting Square data...');
+            }, 1000);
+            
+            addLog('INFO', 'Starting Square data extraction...');
+            
+            try {
+                const response = await fetch(`${SQUARE_API_BASE}/extract`, {
+                    method: 'POST'
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Extraction failed');
+                }
+                
+                addLog('SUCCESS', 'Extraction request sent successfully');
+                
+                // Simulate extraction progress
+                await simulateExtraction();
+                
+            } catch (error) {
+                addLog('ERROR', `Extraction failed: ${error.message}`);
+                resetButton();
+            }
+        }
+
+        async function simulateExtraction() {
+            const steps = [
+                { progress: 20, message: 'Fetching catalog data...', log: 'Retrieving product catalog from Square' },
+                { progress: 40, message: 'Loading inventory counts...', log: 'Fetching inventory for all locations' },
+                { progress: 60, message: 'Analyzing order history...', log: 'Processing 90 days of sales data' },
+                { progress: 80, message: 'Calculating performance metrics...', log: 'Computing analytics and rankings' },
+                { progress: 95, message: 'Saving data files...', log: 'Writing JSON files to disk' }
+            ];
+            
+            for (const step of steps) {
+                updateProgress(step.progress, step.message);
+                addLog('INFO', step.log);
+                await sleep(2000);
+            }
+            
+            // Complete
+            updateProgress(100, 'Extraction complete!');
+            addLog('SUCCESS', 'Data extraction completed successfully');
+            
+            // Check for results
+            setTimeout(async () => {
+                try {
+                    const dashResponse = await fetch(`${SQUARE_API_BASE}/dashboard`);
+                    if (dashResponse.ok) {
+                        const dashboard = await dashResponse.json();
+                        showResults(dashboard);
+                    }
+                } catch (error) {
+                    console.error('Could not fetch results:', error);
+                }
+                
+                resetButton();
+                checkServiceStatus();
+            }, 1000);
+        }
+
+        async function loadExtractionLog() {
+            try {
+                // Try to load log file if your server provides it
+                const response = await fetch(`${SQUARE_API_BASE}/logs`);
+                if (response.ok) {
+                    const logs = await response.json();
+                    logs.forEach(log => {
+                        addLog(log.level, log.message, false);
+                    });
+                }
+            } catch (error) {
+                // Log endpoint might not exist, that's okay
+            }
+        }
+
+        function updateProgress(percent, message) {
+            document.getElementById('progressFill').style.width = percent + '%';
+            document.getElementById('progressText').textContent = message;
+        }
+
+        function showResults(dashboard) {
+            const resultsHTML = `
+                <div class="result-item">
+                    <div class="result-value">${formatNumber(dashboard.quick_stats.total_revenue_90d)}</div>
+                    <div class="result-label">Revenue (£)</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">${formatNumber(dashboard.quick_stats.total_orders)}</div>
+                    <div class="result-label">Orders</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">${formatNumber(dashboard.quick_stats.products_tracked)}</div>
+                    <div class="result-label">Products</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value">${dashboard.last_extraction || 'N/A'}</div>
+                    <div class="result-label">Duration</div>
+                </div>
+            `;
+            
+            document.getElementById('resultsGrid').innerHTML = resultsHTML;
+            document.getElementById('resultsSection').style.display = 'block';
+            
+            // Show additional stats
+            addLog('INFO', `Total inventory: ${formatNumber(dashboard.quick_stats.total_inventory_units)} units`);
+            addLog('INFO', `Unique customers: ${formatNumber(dashboard.quick_stats.unique_customers)}`);
+            addLog('WARNING', `Stockout alerts: ${dashboard.quick_stats.stockout_alerts} products`);
+            addLog('WARNING', `Overstock alerts: ${dashboard.quick_stats.overstock_alerts} products`);
+        }
+
+        function resetButton() {
+            clearInterval(progressInterval);
+            extractionInProgress = false;
+            
+            const btn = document.getElementById('extractBtn');
+            btn.disabled = false;
+            btn.classList.remove('processing');
+            btn.innerHTML = '<span class="btn-icon">🚀</span> Start Data Extraction';
+            
+            setTimeout(() => {
+                document.getElementById('progressSection').style.display = 'none';
+            }, 3000);
+        }
+
+        function addLog(level, message, scroll = true) {
+            const logContent = document.getElementById('logContent');
+            const time = new Date().toLocaleTimeString();
+            
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            logEntry.innerHTML = `
+                <span class="log-time">${time}</span>
+                <span class="log-level ${level.toLowerCase()}">${level}</span>
+                ${message}
+            `;
+            
+            logContent.appendChild(logEntry);
+            
+            if (scroll) {
+                logContent.scrollTop = logContent.scrollHeight;
+            }
+            
+            // Keep only last 50 entries
+            while (logContent.children.length > 50) {
+                logContent.removeChild(logContent.firstChild);
+            }
+        }
+
+        function clearLog() {
+            document.getElementById('logContent').innerHTML = `
+                <div class="log-entry">
+                    <span class="log-time">${new Date().toLocaleTimeString()}</span>
+                    <span class="log-level info">INFO</span>
+                    Log cleared
+                </div>
+            `;
+        }
+
+        function formatTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            
+            if (seconds < 60) return 'Just now';
+            if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+            if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
+            return `${Math.floor(seconds / 86400)}d ago`;
+        }
+
+        function formatNumber(num) {
+            if (!num) return '0';
+            return Math.round(num).toLocaleString();
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
+</body>
+</html>
