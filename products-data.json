@@ -77,26 +77,6 @@
     ]
   },
   {
-    "id": "UFU00718T_130",
-    "title": "Foulard Midi Dress",
-    "description": "<p>Foulard Midi Dress (Open White)</p>\n",
-    "price": "122.50",
-    "currency": "GBP",
-    "image": "https://fb-ads-static.onrender.com/product-images/UFU00718T_U130_MDL_FNT_fb.png",
-    "link": "https://scotch-soda.co.uk/product/foulard-midi-dress-open-white/",
-    "availability": "in stock",
-    "color": "",
-    "size": "",
-    "categories": "All Women's Clothing > Ladies - Dresses > Sale > Women Sale",
-    "additional_images": [
-      "https://fb-ads-static.onrender.com/product-images/UFU00718T_U130_MDL_BCK_fb.png",
-      "https://fb-ads-static.onrender.com/product-images/UFU00718T_U130_MDL_DTL_fb.png",
-      "https://fb-ads-static.onrender.com/product-images/UFU00718T-U130_FNT_fb.png",
-      "https://fb-ads-static.onrender.com/product-images/UFU00718T-U130_BCK_fb.png",
-      "https://fb-ads-static.onrender.com/product-images/UFU00718T-U130_DTL6_fb.png"
-    ]
-  },
-  {
     "id": "U9E00659T_357",
     "title": "V-Neck Modal Sweatshirt",
     "description": "<p>V-Neck Modal Sweatshirt (Igloo)</p>\n",
@@ -562,6 +542,65 @@
       "https://fb-ads-static.onrender.com/product-images/U9A00685T-U111_FNT_fb.png",
       "https://fb-ads-static.onrender.com/product-images/U9A00685T-U111_BCK_fb.png",
       "https://fb-ads-static.onrender.com/product-images/U9A00685T-U111_DTL6_fb.png"
+    ]
+  },
+  {
+    "id": "180097_730",
+    "title": "Seasonal Core - Cotton Pique Regular Fit Polo (Bright Yellow)",
+    "description": "<p>Seasonal Core - Cotton Pique Regular Fit Polo (Bright Yellow)</p>\n",
+    "price": "55",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180097_730_MDL_CRP_fb.png",
+    "link": "https://scotch-soda.co.uk/product/seasonal-core-cotton-pique-regular-fit-polo-bright-yellow/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - T-shirts &amp; Polos",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180097_730_MDL_FNT_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180097_730_MDL_BCK_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180097_730_MDL_DTL_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180097_7653_FNT_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180097_7653_BCK_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180097_7653_DTL6_fb.png"
+    ]
+  },
+  {
+    "id": "180096_270",
+    "title": "Ralston Slim Fit Denim Short — Garment Dye Colours (Light Beige)",
+    "description": "<p>Ralston Slim Fit Denim Short — Garment Dye Colours (Light Beige)</p>\n",
+    "price": "59.50",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180096_3549_FNT_fb.png",
+    "link": "https://scotch-soda.co.uk/product/ralston-slim-fit-denim-short-garment-dye-colours-light-beige/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - Shorts > Men Sale > Sale",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180096_3549_BCK_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180096_3549_DTL6_fb.png"
+    ]
+  },
+  {
+    "id": "180060_001",
+    "title": "Regular Fit Waffle Long-Sleeved T-Shirt ",
+    "description": "<p>Regular Fit Waffle Long-Sleeved T-Shirt (Black)</p>\n",
+    "price": "56.00",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180060_001_MDL_CRP_fb.png",
+    "link": "https://scotch-soda.co.uk/product/regular-fit-waffle-long-sleeved-t-shirt-black/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - T-shirts &amp; Polos > Men Sale > Sale",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180060_001_MDL_BCK_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180060_001_MDL_FNT_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180060_001_MDL_DTL_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180060_0157_FNT_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180060_0157_BCK_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180060_0157_DTL6_fb.png"
     ]
   }
 ]
