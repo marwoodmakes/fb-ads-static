@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "id": "180131_420",
+    "title": "Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)",
+    "description": "<p>Yarn-Dyed Linen Blend Striped Regular Fit Shirt (Medium Blue)</p>\n",
+    "price": "77.00",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_CRP-copy_fb.png",
+    "link": "https://scotch-soda.co.uk/product/yarn-dyed-linen-blend-striped-regular-fit-shirt-medium-blue/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - Shirts > Men Sale > Sale",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180131_420_MDL_DTL-copy_fb.png"
+    ]
+  },
+  {
+    "id": "product_113775",
+    "title": "Knitted Regular Fit T-Shirt (Medium Brown)",
+    "description": "<p>Knitted Regular Fit T-Shirt (Medium Brown)</p>\n",
+    "price": "90",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180458_210_MDL_CRP-copy_fb.png",
+    "link": "https://scotch-soda.co.uk/product/knitted-regular-fit-t-shirt-medium-brown/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "Men - Non-sale Items (SP25)",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180458_210_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180458_210_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/25174966-FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/25174966-BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/25174966-DTL6-copy_fb.png"
+    ]
+  },
+  {
+    "id": "product_113768",
+    "title": "Loose Fit Applique T-Shirt (Navy)",
+    "description": "<p>Loose Fit Applique T-Shirt (Navy)</p>\n",
+    "price": "70",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_CRP-copy_fb.png",
+    "link": "https://scotch-soda.co.uk/product/loose-fit-applique-t-shirt-navy/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "NoCategory",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_401_MDL_DTL-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_4400_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_4400_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/180350_4400_DTL6-copy_fb.png"
+    ]
+  },
+  {
+    "id": "179899_401",
+    "title": "Front And Back Artwork Hoodie (Navy)",
+    "description": "<p>Front And Back Artwork Hoodie (Navy)</p>\n",
+    "price": "91.00",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_CRP_FNT-copy_fb.png",
+    "link": "https://scotch-soda.co.uk/product/front-and-back-artwork-hoodie-navy/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - Sweatshirts > Men Sale > Sale",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_FNT-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_BCK-copy_fb.png",
+      "https://fb-ads-static.onrender.com/product-images/179899_401_MDL_DTL-copy_fb.png"
+    ]
+  },
+  {
+    "id": "SS123275_001-OS",
+    "title": "3Pk Mens 1/2 Terry Crew (Black)",
+    "description": "<p>3Pk Mens 1/2 Terry Crew (Black)</p>\n",
+    "price": "35",
+    "currency": "GBP",
+    "image": "https://fb-ads-static.onrender.com/product-images/LKJHG_fb.png",
+    "link": "https://scotch-soda.co.uk/product/3pk-mens-1-2-terry-crew-black/",
+    "availability": "in stock",
+    "color": "",
+    "size": "",
+    "categories": "All Men's Clothing > Men - Accessories > Men - Accessories (SP25) > Men's New Arrivals > New Arrivals",
+    "additional_images": [
+      "https://fb-ads-static.onrender.com/product-images/WEDRFTY_fb.png"
+    ]
+  }
+]
